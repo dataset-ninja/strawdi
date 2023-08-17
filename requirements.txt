@@ -1,1 +1,2 @@
-git+https://github.com/supervisely/dataset-tools
+supervisely==6.72.19
+dataset-tools==0.0.9

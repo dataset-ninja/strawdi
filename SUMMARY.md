@@ -1,9 +1,9 @@
-**The Strawberry Digital Images Data Set** is a dataset for instance segmentation, object detection, and semantic segmentation tasks. It is used in the agricultural industry. 
+**PASCAL VOC 2012** (PASCAL Visual Object Classes Challenge) is a dataset for semantic segmentation, object detection, and instance segmentation tasks. It is applicable or relevant across various domains.
 
+The dataset consists of 7282 images with 19694 labeled objects belonging to 21 different classes including *neutral*, *person*, *chair,* and other: *car, cat, dog, bird, bottle, sofa, aeroplane, pottedplant, train, diningtable, motorbike, tvmonitor, bus, boat, horse, bicycle, cow, and sheep*.
 
+Each image in the PASCAL VOC 2012 dataset has pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. There are 1456 (20% of the total) unlabeled images (i.e. without annotations). There are 4 splits in the dataset: *test* (1456 images), *val* (1449 images), *train* (1464 images), and *trainval* (2913 images). The dataset was released in 2012.
 
-The dataset consists of 3100 images with 17938 labeled objects belonging to 1 single class (*strawberry*).
+Here are the visualized examples for each of the 21 classes:
 
-Images in the StrawDI dataset have pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into a semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. All images are labeled (i.e. with annotations). There are 3 splits in the dataset: *test* (200 images), *train* (2800 images), and *val* (100 images). The dataset was released in 2020.
-
-<img src="https://github.com/dataset-ninja/strawdi/raw/main/visualizations/poster.png">
+[Dataset classes](https://github.com/dataset-ninja/pascal-voc-2012/raw/main/visualizations/classes_preview.webm)

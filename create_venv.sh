@@ -1,28 +1,23 @@
 #!/bin/bash
 
-# Checking if .venv dir already exists.
+# learn more in documentation
+# Official python docs: https://docs.python.org/3/library/venv.html
+# Superviely developer portal: https://developer.supervise.ly/getting-started/installation#venv
+
 if [ -d ".venv" ]; then
-    echo "VENV dir (.venv) already exists, it will be removed."
+    echo "VENV already exists, will be removed"
     rm -rf .venv
 fi
 
-echo "VENV will be created"
-
-# Checking if python3.8 is available in PATH.
-if command -v python3.8 &>/dev/null; then
-    python_executable="python3.8" && \
-    echo "Python 3.8 found, it will be used for creating VENV dir."
-else
-    python_executable="python3" && \
-    echo "Python 3.8 not found, default python3 will be used for creating VENV dir."
-fi
-
-# Creating VENV dir with selected python executable.
-$python_executable -m venv .venv && \
+echo "VENV will be created" && \
+python3 -m venv .venv && \
 source .venv/bin/activate && \
 
-# Installing requirements from requirements.txt.
 echo "Install requirements..." && \
 pip3 install -r requirements.txt && \
-echo "Requirements have been successfully installed, VENV ready." && \
+echo "Requirements have been successfully installed" && \
+echo "Testing imports, please wait a minute ..." && \
+python3 -c "import supervisely as sly" && \
+python3 -c "import dataset_tools as dtools" && \
+echo "Success!" && \
 deactivate
