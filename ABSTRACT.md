@@ -2,7 +2,7 @@
 
 The capture device used was a Samsung Galaxy S7 Edge smartphone attached to an extendable arm. In order to build a data set close to the target application, the images were taken under different conditions of brightness, at a distance of approximately 20 cm from the ridge, at about 35 +-10 cm height and an approximate angle of 25 +-10º. The images have a 4032x3024 resolution and are stored in a JPEG format.
 
-<img src="https://github.com/supervisely/supervisely/assets/78355358/febce694-9cc5-411e-b594-2da769375ae2" alt="image" width="800">
+<img src="https://github.com/supervisely/supervisely/assets/78355358/febce694-9cc5-411e-b594-2da769375ae2" alt="image" width="400">
 
 From the total set of images that make up the StrawDI data set, <i>3100 images have been selected at random</i>. For each of these images, a ground truth labelled image has been manually generated containing the individual segmentation of all the strawberries appearing in the image.
 
