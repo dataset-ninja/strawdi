@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "StrawDI"
-PROJECT_NAME_FULL: str = "StrawDI: The Strawberry Digital Images Data Set"
+PROJECT_NAME: str = "StrawDI_Db1"
+PROJECT_NAME_FULL: str = "StrawDI_Db1: The Strawberry Digital Images Data Set"
 HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
